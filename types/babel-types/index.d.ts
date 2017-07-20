@@ -442,6 +442,7 @@ export interface ImportDeclaration extends Node {
     type: "ImportDeclaration";
     specifiers: Array<ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier>;
     source: StringLiteral;
+    importKind: "type" | "value"
 }
 
 export interface ImportDefaultSpecifier extends Node {
