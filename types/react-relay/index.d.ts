@@ -15,6 +15,7 @@
 //   types/{react-relay,relay-runtime}/{,*}/*.ts*
 
 export {
+    CRelayContext,
     commitLocalUpdate,
     commitRelayModernMutation as commitMutation,
     fetchRelayModernQuery as fetchQuery,
@@ -68,6 +69,11 @@ export interface RelayProp {
 // RelayQL
 // ~~~~~~~~~~~~~~~~~~~~~
 export function RelayQL(strings: string[], ...substitutions: any[]): RelayRuntimeTypes.RelayConcreteNode;
+
+// ~~~~~~~~~~~~~~~~~~~~~
+// ReactRelayContext
+// ~~~~~~~~~~~~~~~~~~~~~
+export const ReactRelayContext: React.Context<CRelayContext>
 
 // ~~~~~~~~~~~~~~~~~~~~~
 // ReactRelayTypes
